@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    >
+
+    <LinearLayout
+        android:id="@+id/select_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:weightSum="1"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/iv_bike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:src="@drawable/racing"
+            />
+        <ToggleButton
+            android:id="@+id/tb_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+         <!--<android.support.v7.widget.SwitchCompat-->
+        <!--android:id="@+id/switchButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:checked="false"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="Switch example"-->
+        <!--/> -->
+
+
+        <ImageView
+            android:id="@+id/iv_car"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:src="@drawable/motorbike"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_Edit_Time"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="25dp"
+        android:layout_below="@+id/select_linear_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/tv_entrytime"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/car"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/entry_time"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/ExtraTime_Text"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="DD/MM/YYYY"
+            android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/et_vehicleno"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/car"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/exit_time"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/exit_time"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:hint="DD/MM/YYYY"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Select_Slot_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Boarding Slot"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/white"/>
+
+</RelativeLayout>
